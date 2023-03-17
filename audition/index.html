@@ -50,33 +50,47 @@ Released   : 20140221
 	<div id="page" class="container">
 		<div>
 			<div class="title">
-				<h2>TODO: insert your scientific question as clear & concise as possible</h2>
-				<span class="byline">TODO: Insert your name if you wish.</span> </div>
+				<h2>Can reverberation break bi-stable interpretations of speech?</h2>
+				<span class="byline">Crista Falk, Vivian Garcia, Somaia Saba</span> </div>
 
-				<p>TODO: insert your 2 paragraph explanation of your demo design here.</p>
-				<p>If headphones should be used (e.g. because you're using spatial sound), say that here.</p>
+				<p>In this illusion, there are 4 different versions of the same audio. In the original, a phrase is being said by multiple people simultaneously; this sentence has several different stable interpretations including but not limited to: Bart Simpson bouncing; that isn’t my receipt; lactates in pharmacy; baptism piracy; that is embarrassing. Each person is actually saying a different phrase, but in unison, it sounds like they are saying the same phrase, further ensuring ambiguity in the perception of the audio.</p>
+				<p>We aimed to clarify whether or not reverberation can break multistable interpretations of the audio. We added three different levels of reverberation to the audio; a small room condition, a large room condition, and a cathedral condition. Try listening to the audio with reverb and see if your interpretation changes.
+				</p>
+				<p>(headphones optional)</p>
 
 				<!-- Here is some template code to help you insert sounds and images into the page: -->
 				<!-- How to insert sounds -->
-				<audio controls>
-				  <source src="TODO:my_sound_name.wav" type="audio/wav">
-				Your browser does not support the audio element.
-				</audio><br>
+				<p><i>Original Condition:</i></p>
+				<audio id="s1">
+				  <source src="original.wav" type="audio/wav">
+				</audio>
+				<img src="original.png" width=500 onClick="document.getElementById('s1').play(); return false;" style="cursor: pointer;"/><br>
+				<br>
+
+				<p><i>Small Room Condition:</i></p>
+				<audio id="s2">
+				  <source src="small_room.wav" type="audio/wav">
+				</audio>
+				<img src="small_room.png" width=500 onClick="document.getElementById('s2').play(); return false;" style="cursor: pointer;"/><br>
+				<br>
+
+
+				<p><i>Large Room Condition:</i></p>
+				<audio id="s3">
+				  <source src="large_room.wav" type="audio/wav">
+				</audio>
+				<img src="large_room.png" width=500 onClick="document.getElementById('s3').play(); return false;" style="cursor: pointer;"/><br>
+				<br>
+
+				<p><i>Cathedral Condition:</i></p>
+				<audio id="s4">
+				  <source src="cathedral.wav" type="audio/wav">
+				</audio>
+				<img src="cathedral.png" width=500 onClick="document.getElementById('s4').play(); return false;" style="cursor: pointer;"/><br>
+				<br>
 				<!--WAV files will work best-->
 
-				<!-- How to insert images:-->
-				<img src="TODO:my_image_name.png" width=500/><br>
-				<!--You can use the width parameter to change the size of your image-->
-				<!--src could be a gif, png, jpeg, etc.-->
-
-				<!-- How to insert images that play sounds when you click them -->
-				<audio id="s1">
-				  <source src="TODO:my_sound_name.wav" type="audio/wav"/>
-				</audio>
-				<img src="TODO:my_image_name.png" width=500 onClick="document.getElementById('s1').play(); return false;" style="cursor: pointer;"/><br>
-				<!-- you can use any short name in place of "s1" for audio id, it's just how the browser knows which sound to play using "getElementByID" -->
-
-				<p>TODO: insert the full citation to the papers that inspired you here.<p>
+				<p>Inspired by Assman P, Summerfield Q. The perception of speech under adverse acoustic conditions. In: Greenberg W, Ainsworth, R. Popper, R. Fay (eds). Speech Processing in the Auditory System. Springer Handbook of Auditory Research, Vol. 18 (in press).<p>
 
 		</div>
 		<!-- begin wwww.htmlcommentbox.com -->
